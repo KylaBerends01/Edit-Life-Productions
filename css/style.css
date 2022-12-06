@@ -1,0 +1,810 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* End of reset code */
+
+
+
+
+
+
+/* MY CODE */
+body{
+    background-color: #eee;
+    font-family:'Montserrat', sans-serif;
+}
+
+/* wrapper for all content - gives the page content margins*/
+.wrapper{
+    margin: 0 auto 0 0;
+    width: 100%;
+}
+
+/* HEADER (NAV BAR) */
+header{
+    background-color: white;
+    width: 100%;
+    height:120px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header-brand img{
+    width:170px;
+    padding-bottom:20px;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+header nav ul{
+    margin:0 auto;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    align-items:center;
+    width:fit-content;
+}
+
+header nav ul li{
+    margin:0 auto;
+}
+
+header nav ul li a{
+    font-family:'Montserrat', sans-serif;
+   text-decoration:none; 
+   font-size:16px;
+   color:#111;
+   padding:0 10px;
+   display: block;
+   justify-content:center;
+   transition:all .25s;
+}
+
+header .header-quote{
+    display:none;
+}
+
+header nav ul li a:hover{
+    letter-spacing:10px;
+    color:#5c3a1c;
+}
+/* HEADER (NAV BAR) */
+
+
+/* INDEX MAIN*/
+/* front banner */
+.index-banner{
+    width:100%;
+    height: calc(100vh - 100px);
+    background-image:url(../images/ELM2.jpg);
+    background-repeat:no-repeat;
+    background-position:top;
+    background-size:cover;
+    background-attachment:fixed;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.index-bannertext-center{
+    align-items:center;
+    justify-content: center;
+}
+
+.index-banner h1{
+    font-size:60px;
+    font-weight:600;
+    text-shadow:2px 2px 12px #111;
+    color:#fff;
+    text-align: center;
+    line-height:70px;
+}
+
+.index-banner h2{
+    font-size:32px;
+    font-weight:200;
+    text-shadow:2px 2px 12px #111;
+    color:#fff;
+    text-align: center;
+    letter-spacing:0.1em;
+    line-height:40px;
+}
+
+.index-banner h1 span{
+    color:#FFD6A3;
+    text-decoration: underline;
+    text-underline-offset:10px;
+}
+
+/* subscribe box */
+.Newsletter{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    padding:20px;
+}
+
+.Newsletter form{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.Newsletter form input:first-child{
+    border-radius: 30px 0px 0px 30px;
+    width:60%;
+    border: 2px solid #FFD6A3;
+}
+
+.Newsletter form input:last-child{
+    width:20%;
+    max-width:250px;
+    border-radius: 0 30px 30px 0px;
+    background-color:#FFD6A3;
+    border: 2px solid #FFD6A3;
+    color:#111;
+    margin:0;
+    right:0;
+}
+
+.Newsletter form input:last-child:hover{
+    background-color:#111;
+    border: 2px solid #111;
+    color:#fff;
+    transition: all .5s ease;
+}
+/* boxlinks */
+
+.index-boxlink-addition-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    row-gap: 20px;
+    align-content: center;
+    padding-bottom:20px;
+ }
+
+.index-boxlink-addition-wrapper div{
+    display:flex;
+    flex-direction:column;
+    min-width: 150px;
+    width:30%;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+    padding:10px;
+    margin:10px;
+ }
+ .index-boxlink-addition1{
+    border-right:1px solid #111;
+ }
+
+ .index-boxlink-addition-wrapper h3{
+    text-align:center;
+    padding:10px;
+ }
+ 
+ .index-boxlink-addition-wrapper button{
+    transition: all .5s ease;
+    color: #111;
+    border: 2px solid #111;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 17px;
+    background-color: transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 4px;
+    margin:10px;
+    }
+ .index-boxlink-addition-wrapper button:hover{
+    color: #fff;
+    background-color: #111; 
+ }
+.index-boxlink-wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.index-boxlink-wrapper a{
+    font-size:18px;
+    font-weight:400;
+    font-family:'Montserrat', sans-serif;
+    color:#111;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+    height:50px;
+    width:fit-content;
+    padding:5px;
+    margin:20px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    transition:all .25s;
+}
+
+.index-boxlink-wrapper a:hover{
+    letter-spacing:15px;
+ }
+
+ /* boxlink addition */
+ .index-boxlink-addition-wrapper{
+    display:flex;
+    margin-top:20px;
+    margin-bottom:20px;
+ }
+
+ .index-boxlink-addition-wrapper h3{
+    font-size:18px;
+    line-height: 1.2em;
+   color:#111;
+   font-weight:400;
+   text-transform:uppercase;
+   font-family:'Montserrat', sans-serif;
+ }
+
+ /* Client testimonial */
+.index-testimonial{
+    background-color: #5c3a1c;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding:20px 0 20px 0;
+}
+
+.index-testimonial p{
+    color:white;
+    padding:20px;
+    line-height: 1.4em;
+    letter-spacing: 0.1em;
+    width:80%;
+}
+
+.index-testimonial h3{
+    color:white;
+    font-size:1.2em;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.4em;
+    letter-spacing: 0.1em;
+    width:80%;
+}
+
+ /* Banner */
+.Img-banner2{
+    display:none;
+}
+
+/* Examples section */
+.index-examples{
+    padding:40px 0 40px 0;
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-examples h2{
+    font-size:1.6em;
+    font-weight:400;
+    letter-spacing: 0.1em;
+    text-transform:uppercase;
+}
+
+.index-examples p{
+    font-size:1.2em;
+    line-height:2em;
+}
+
+.index-examples-box {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-examples-box img{
+    display:inline-flex;
+    width:300px;
+    padding:10px;
+}
+
+
+ /* END OF INDEX */
+
+/* FOOTER */
+footer{
+    padding: 30px;
+    background-color: #111;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+}
+
+footer ul{
+    width:fit-content;
+    padding:10px;
+    align-self:center;
+}
+
+footer ul li{
+    font-family:'Montserrat', sans-serif;
+    font-size:24px;
+    font-weight:600;
+    color:#fff;
+    list-style: none;
+    display:block;
+}
+
+footer ul li a{
+    font-family:'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight:400 !important;
+    color:#fff;
+    list-style: none;
+    line-height:40px;
+}
+
+.footer-blogs{
+    display:none;
+}
+
+.footer-socialmedia{
+    width:fit-content;
+    align-items:center;
+    align-self:center;
+    width:40px;
+    justify-content:center;
+    padding-right:10px;
+}
+
+.footer-socialmedia a{
+    display:flex;
+    flex-direction:column;
+}
+
+.footer-socialmedia a img{
+    width:100%;
+    margin-bottom:5px;
+}
+/* END OF FOOTER */
+
+ /* ABOUT US */
+
+ .about-us-main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 0 40px 0;
+ }
+
+.about-us{
+    margin:0 100px 0 100px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+.about-us h1{
+    text-align: center;
+    font-size:1.6em;
+    font-weight:400;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.about-us p{
+    font-size:1em;
+    line-height:1.2;
+    padding:20px;
+}
+
+ .about-us-img-container img{
+    width:400px;
+    align-self: center;
+}
+
+ /* END OF ABOUT US */
+
+
+ /* CONTACT US */
+ label{
+    font-family:'Montserrat', sans-serif;
+    font-size:1em;
+ }
+
+ form{
+    display: flex; 
+    justify-content: center;
+    align-content: center;
+    flex-direction:column;
+    align-self: center;
+    padding:0 40px 40px 40px;
+ }
+
+ form div{
+    display: flex; 
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    padding-top:20px;
+ }
+
+ form div label,input,textarea, select{
+    font-family:'Montserrat', sans-serif;
+    font-size:1em;
+    color:#111;
+    padding:10px;
+ }
+
+ input,select, textarea{
+    width:100%;
+ }
+
+ .Submit input{
+    width:30%;
+    background-color:salmon;
+    align-items: center;
+    color:#fff;
+    border-radius: 5px;
+    border:2px solid grey;
+ }
+
+ .Submit input:hover{
+    background-color:blueviolet;
+ }
+
+ /* left column of contact us page */
+ .Row{
+    padding:30px;
+    overflow: hidden;
+    height:fit-content;
+ }
+
+ .Row h1{
+    font-family:'Montserrat', sans-serif;
+    font-size:1.5em;
+    color:#111;
+    font-weight:600;
+    text-transform: uppercase;
+    text-align:center;
+    padding-bottom:10px;
+    padding-top:10px;
+}
+
+.Row p{
+    font-family:'Montserrat', sans-serif;
+    font-size:1em;
+    color:#111;
+    font-weight:400;
+    text-align:center;
+    line-height:1.2em;
+}
+
+ .Left-column{
+    height:100%
+ }
+
+ .card-contactus-team{
+    padding:10px;
+    background-color: #fff;
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+ }
+
+ .card-contactus-info{
+    background-color: #fff;
+    margin:20px auto 0 auto;
+    padding:20px;
+ }
+
+ .employee-shots div{
+    margin:10px;
+    height:100px;
+    width:100px;
+ }
+
+ .employee-shot1{
+    background-image: url(../images/team-member3.jpg);
+    background-size:contain;
+    border-radius: 50%;
+ }
+
+ .employee-shot2{
+    background-image: url(../images/team-member2.jpg);
+    background-size:contain;
+    border-radius: 50%;
+ }
+
+ .employee-shot3{
+    background-image: url(../images/team-member1.jpg);
+    background-size:contain;
+    border-radius: 50%;
+ }
+
+ .employee-shots{
+    display:inline-flex;
+    align-content: center;
+    justify-content: center;
+ }
+
+ /* Right column of contact us page */
+
+.right-column-portfolio{
+    width:100%;
+    padding-top:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.right-column-portfolio img{
+    width:80%;
+    padding:5px 10px 5px 10px;
+}
+
+.right-column-socials{
+    width:100%;
+    padding-top:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.right-column-socials img{
+    width:50px;
+    padding:20px;
+}
+
+/* END OF CONTACT US */
+
+ /* PORTFOLIO*/
+.wrapper-video{
+    position: relative;
+    padding-bottom: 56.25% !important;
+    padding-top:25px;
+    height:0;
+}
+
+.wrapper-video iframe{
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    height:100%;
+    width:100%;
+}
+/* PORTFOLIO*/
+
+
+/* conditional formatting for iphones */
+@media only screen and (min-width:768px){
+.img-banner{ 
+    display:block;
+    width:100%;
+    padding-bottom:30px;
+}
+
+.Img-banner2{ 
+    display:block;
+    width:100%;
+    padding-bottom:30px;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 600px;
+}
+
+.img-info h2 {
+    padding:20px 0 0;
+}
+
+.img-info p {
+    padding:20px 0 0 0;
+}
+.img-ethan{
+    margin-top:20px;
+ }
+
+ .index-boxlink-wrapper{
+    flex-direction: column;
+}
+}
+/* conditional formatting for iphones */
+
+
+/* conditional formatting for laptops */
+@media only screen and (min-width:1000px){
+    header{
+        display:flex;
+        flex-direction:row;
+        justify-content: flex-start;
+    }
+    
+    header .header-brand img{
+        width:220px;
+        padding-right: 20px;
+        padding-bottom:0;
+        margin-right:20px;
+        border-right:2px solid #111;
+        padding-left:60px;
+    }
+
+    
+    .index-examples-box {
+        display: flex;
+        flex-flow:wrap;
+    }
+    
+    .wrapper{
+        width: 80%;
+    }
+
+    .Img-banner2{
+        width:100%;
+        height: 500px;
+        background-image:url(../images/Seachange1.png);
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:cover;
+        background-attachment:fixed;
+        }
+
+    form div{
+        width:800px;
+    }
+
+    form{
+        align-items: center;
+    }
+
+    input,select, textarea{
+        width:50%;
+     }
+
+     .Newsletter form input{
+        width:100% !important;
+     }
+
+    .index-boxlink-wrapper{flex-direction: row;}
+
+    .right-column{
+        float:right;
+        width:25%;
+        margin:0;
+    }
+
+    .Left-column{
+        width:72%;
+        float:left;
+        margin:0;
+     }
+    
+    }
+    /* conditional formatting for laptops */
